@@ -1,0 +1,97 @@
+.footer-soc{
+    margin-left: 70px;
+
+    &__title{
+        @include font(14px, 1.14, 700, 0.03em);
+text-transform: uppercase;
+    color: var(--footer-soc-title-color);
+    margin-bottom: 20px;
+}
+
+&__list{
+   display: flex; 
+}
+
+&__item{
+display: flex;
+}
+
+&__item:not(:last-child){
+    margin-right: 10px;
+}
+
+&__link{
+   margin: 0;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #FFFFFF;
+    box-sizing: border-box;
+    object-fit: contain;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link:active,
+&__link:hover,
+&__link:focus{
+     fill: var(--hero-btn-color);
+background-color: var(--header-accent-color);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+}
+
+
+.footer-email{
+margin-left: 93px;
+
+&__title{
+    @include font(14px, 1.14, 700, 0.03em);
+text-transform: uppercase;
+    color: var(--footer-soc-title-color);
+    margin-bottom: 20px;
+}
+
+&__contain{
+    display: flex;
+}
+}
+
+.email__input{
+    width: 358px;
+height: 50px;
+    margin-right: 12px;
+   background-color: transparent;
+   box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   padding-left: 16px;
+
+}
+
+.submit-btn-email{
+    @include font(16px, 1.88, 700, 0.06em);
+    width: 200px;
+height: 50px;
+padding-left: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: transparent;
+}
+
+.submit-btn-email-icon{
+    fill: currentColor;
+    margin-left: 10px;
+}
