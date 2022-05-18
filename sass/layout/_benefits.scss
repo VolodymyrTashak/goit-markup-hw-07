@@ -1,16 +1,18 @@
-.benefits__list {
+.benefits {
   display: flex;
 }
 
 .benefits__item {
   width: 270px;
-}
 
-.benefits__item:not(:last-child) {
+  &:not(:last-child) {
   margin-right: 30px;
 }
+}
 
-.benefits__item-icon {
+
+
+.benefits__item-box {
   display: inline-flex;
   margin-bottom: 30px;
   padding: 0;

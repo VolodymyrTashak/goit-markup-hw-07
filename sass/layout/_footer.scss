@@ -35,8 +35,9 @@ text-decoration: none;
 
 .footer-list__item{
     margin-bottom: 9px;
-}
 
-.footer-list__item:last-child{
+    &:last-child{
 margin-bottom: 0px;
 }
+}
+

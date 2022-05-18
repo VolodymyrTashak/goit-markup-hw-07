@@ -54,24 +54,6 @@ padding-bottom: 32px;
     margin-right: 50px;
 }
 
-&__link{
-    @include font(14px, 1.14, 500, 0.02em);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-box-sizing: border-box;
-    padding-top: 32px;
-padding-bottom: 32px;
-    color: var(--header-content-color);
-}
-
-&__link:active,
-&__link:hover,
-&__link:focus{
-box-sizing: border-box;
-  color: var(--header-accent-color);  
-}
-
 &__mail-icon{
 fill: currentColor;
     margin-right: 10px;
@@ -82,7 +64,26 @@ fill: currentColor;
     fill: currentColor;
       margin-right: 10px;
 }
-
 }
+
+.connect-list__link{
+    @include font(14px, 1.14, 500, 0.02em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+box-sizing: border-box;
+    padding-top: 32px;
+padding-bottom: 32px;
+    color: var(--header-content-color);
+
+    &:active,
+&:hover,
+&:focus{
+box-sizing: border-box;
+  color: var(--header-accent-color);  
+}
+}
+
+
 
 
